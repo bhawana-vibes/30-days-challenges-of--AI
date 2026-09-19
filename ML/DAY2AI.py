@@ -121,7 +121,7 @@ char()# fun call'''
 result = sum(123 ,474)
 print(result)'''
 
-def cal_avg(a ,b ,c):
+'''def cal_avg(a ,b ,c):
     sum = a+b+c
     return sum/3
 print(cal_avg(3,5,8))
@@ -129,4 +129,14 @@ print(cal_avg(3,5,8))
 
 def sum(a ,b=1):
     return a+b
-print(sum(10))
+print(sum(10))'''
+
+
+#factorial N
+def cal_fact(n):
+    fact = 1
+    for i in range(1 , n+1):
+        fact = fact*i
+    return fact
+n =int(input("enter the n:"))
+print(cal_fact(n))
