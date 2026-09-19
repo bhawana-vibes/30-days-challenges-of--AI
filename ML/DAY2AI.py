@@ -102,8 +102,27 @@ print("count of vowels =" , count)
  #   print(i)
 
 
-n = int(input("enter the number:"))
+'''n = int(input("enter the number:"))
 sum = 0
 for i in range(1 ,n+1):
     sum += i
-print(sum)
+print(sum)'''
+
+#functions
+'''def char():#fun definition
+    print("bhawana")
+    print("i am a girl")
+char()# fun call'''
+
+
+'''def sum (a ,b):
+    s = a+b
+    return s
+result = sum(123 ,474)
+print(result)'''
+
+def cal_avg(a ,b ,c):
+    sum = a+b+c
+    return sum/3
+print(cal_avg(3,5,8))
+
