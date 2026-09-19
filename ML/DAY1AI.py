@@ -1,3 +1,7 @@
+mantra = "हरे कृष्ण, हरे कृष्ण, कृष्ण कृष्ण, हरे हरे।हरे राम, हरे राम, राम राम, हरे हरे।।"
+print("ॐ गं गणपतये नमः")
+print(mantra)
+
 '''print("hello\nbhawana")
 print("bhawana")'''
 
