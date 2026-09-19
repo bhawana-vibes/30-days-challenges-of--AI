@@ -88,3 +88,15 @@ for ch in word:
     if (ch == 'a'):
         count += 1
 print("count of vowels =" , count)
+
+
+#loops in range
+#for i in range(10):
+    #print(i)
+
+#for i in range(1 , 11):
+   # print(i)
+
+
+for i in range(2, 100 , 2):
+    print(i)
