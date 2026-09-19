@@ -53,7 +53,7 @@ else:
     print("odd number")'''
 
 #loops
-i = 1
+'''i = 1
 while(i <= 10):
     print("bhawana" , i )
     i= i+1
@@ -67,4 +67,8 @@ n = int(input("enter the number:"))
 i = 1
 while(i <= 10):
     print(n*i)
-    i = i+1
+    i = i+1'''
+
+string = "bhawana"
+for var in string:
+    print(var)
