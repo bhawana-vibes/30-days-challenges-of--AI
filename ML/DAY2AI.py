@@ -126,3 +126,7 @@ def cal_avg(a ,b ,c):
     return sum/3
 print(cal_avg(3,5,8))
 
+
+def sum(a ,b=1):
+    return a+b
+print(sum(10))
