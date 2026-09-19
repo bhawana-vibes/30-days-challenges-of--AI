@@ -80,3 +80,11 @@ for ch in word:
     if (ch =='i'):
         count += 1
 print("count of i =" , count)
+
+
+word = "bhawana"
+count = 0
+for ch in word:
+    if (ch == 'a'):
+        count += 1
+print("count of vowels =" , count)
