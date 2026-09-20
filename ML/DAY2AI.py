@@ -140,3 +140,5 @@ def cal_fact(n):
     return fact
 n =int(input("enter the n:"))
 print(cal_fact(n))
+
+print("...LECTURE2 DONE....")
