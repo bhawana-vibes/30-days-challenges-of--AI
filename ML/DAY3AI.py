@@ -14,4 +14,7 @@ for ch in name:
 
 name = "bhawana"
 print(name[1:5])
-
+print(name[0:])
+print(name[1:len(name)])
+print(name[::])
+print(name[-5:-1])
