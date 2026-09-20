@@ -80,7 +80,7 @@ for n in range(1 , 101):
     print("zero")'''
 
 #que8
-def calculator(a , b , operation):
+'''def calculator(a , b , operation):
     if operation == "+":
         return a+b
     elif operation == "-":
@@ -95,14 +95,23 @@ def calculator(a , b , operation):
 num1 = float(input("Enter first number: "))
 num2 = float(input("Enter second number: "))
 op = input("Enter operation (+, -, *, /): ")
-
 result = calculator(num1, num2, op)
-print("Result:", result)
-#print(calculator(2 , 3, '+'))
-#print(calculator(2 , 3, '-'))
-#print(calculator(2 , 3, '*'))
-#print(calculator(2 , 3, '/'))
+print("Result:", result)'''
 
+#que10
+'''secert_number = 25
+while True:
+    guess = int(input("enter the number:"))
+    if guess > secert_number:
+        print("too high")
+    elif guess < secert_number:
+        print("too low")
+    else:
+        print("correct!")
+        break'''
+
+
+print("......ASSINGMENT2 DONE.......")
 
 
 
