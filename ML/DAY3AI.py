@@ -12,7 +12,7 @@ print(name1 +  " " +  name2)'''
 for ch in name:
     print(ch)'''
 
-name = "bhawana"
+'''name = "bhawana"
 print(name[1:5])
 print(name[0:])
 print(name[1:len(name)])
@@ -30,4 +30,10 @@ print("sum of {} & {} is {}".format(a, b ,sum))
 print("sum is {2} of {0} & {1}".format(a,b,sum))
 
 #value based
-print("values of  vars {a} & {b}".format(a=3 , b=2))
+print("values of  vars {a} & {b}".format(a=3 , b=2))'''
+
+#f-string
+a = 5
+b = 7
+print(f"sum of {a} & {b} is {a+b}")
+print(f"avg of {a} & {b} is {(a+b)/2}")
