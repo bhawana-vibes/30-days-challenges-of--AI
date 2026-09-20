@@ -8,6 +8,10 @@ name2 = "shilpi"
 
 print(name1 +  " " +  name2)'''
 
-name = "bhawana hirnwal"
+'''name = "bhawana hirnwal"
 for ch in name:
-    print(ch)
+    print(ch)'''
+
+name = "bhawana"
+print(name[1:5])
+
