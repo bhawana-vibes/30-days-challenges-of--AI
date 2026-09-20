@@ -98,6 +98,18 @@ op = input("Enter operation (+, -, *, /): ")
 result = calculator(num1, num2, op)
 print("Result:", result)'''
 
+#que9
+def prime_num(n):
+    if n < 2:
+        return False
+    for i in range(2 , n):
+        if n % i ==0:
+            return False
+    return True
+num = int(input("Enter a number: "))
+print(prime_num(num))
+
+
 #que10
 '''secert_number = 25
 while True:

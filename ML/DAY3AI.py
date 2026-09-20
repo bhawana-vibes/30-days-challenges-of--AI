@@ -17,10 +17,10 @@ print(name[1:5])
 print(name[0:])
 print(name[1:len(name)])
 print(name[::])
-print(name[-5:-1])
+print(name[-5:-1])'''
 
 #string formatting
-a= 3
+'''a= 3
 b = 5
 sum = a+b
 #normal formatting
@@ -30,10 +30,18 @@ print("sum of {} & {} is {}".format(a, b ,sum))
 print("sum is {2} of {0} & {1}".format(a,b,sum))
 
 #value based
-print("values of  vars {a} & {b}".format(a=3 , b=2))'''
+print("values of  vars {a} & {b}".format(a=3 , b=2))
 
 #f-string
 a = 5
 b = 7
 print(f"sum of {a} & {b} is {a+b}")
-print(f"avg of {a} & {b} is {(a+b)/2}")
+print(f"avg of {a} & {b} is {(a+b)/2}")'''
+
+#lists
+marks = [57,67,98,76,90]
+marks[2] = 88
+print(len(marks))
+print(marks)
+print(type(marks))
+print(marks[0:5])
