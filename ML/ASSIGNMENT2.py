@@ -65,7 +65,7 @@ for n in range(1 , 101):
 
 
 #que7
-while True:
+'''while True:
   n = input("enter the number:")
   if n == "quit":
     print("program stop")
@@ -77,7 +77,32 @@ while True:
   elif num<0:
     print("negative")
   else:
-    print("zero")
+    print("zero")'''
+
+#que8
+def calculator(a , b , operation):
+    if operation == "+":
+        return a+b
+    elif operation == "-":
+        return a-b
+    elif operation == "*":
+        return a*b
+    elif operation == "/":
+        return a/b
+    else:
+        return "invalid operation"
+
+num1 = float(input("Enter first number: "))
+num2 = float(input("Enter second number: "))
+op = input("Enter operation (+, -, *, /): ")
+
+result = calculator(num1, num2, op)
+print("Result:", result)
+#print(calculator(2 , 3, '+'))
+#print(calculator(2 , 3, '-'))
+#print(calculator(2 , 3, '*'))
+#print(calculator(2 , 3, '/'))
+
 
 
 
