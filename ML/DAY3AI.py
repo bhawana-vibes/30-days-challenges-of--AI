@@ -47,6 +47,20 @@ print(type(marks))
 print(marks[0:5])
 marks.append(99)
 marks.insert(3 , 70)
-marks.sort()'''
+marks.sort()
 marks.reverse()
-print(marks)
+print(marks)'''
+
+#using for loop with lists
+#marks = [57,67,98,76,90]
+#for val in marks:
+   # print(val)
+
+marks = [57,67,98,76,90]
+x = 98
+idx = 0
+for val in marks:
+  if val == x:
+    print(idx)
+    break 
+  idx = idx +1
