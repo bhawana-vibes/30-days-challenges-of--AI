@@ -80,13 +80,23 @@ for val in digits:
 sum = 0
 for val in digits:
     sum += val
-print(sum)'''
+print(sum)
 
 num = (2,4,6,8,6,9,4)
 print(num.index(4))
-print(num.count(6))
+print(num.count(6))'''
 
-
+#dictionary
+info = {
+    "name" : "bhawana hirnwal",
+    "city" : "bijnor",
+    "cgpa" : 85,
+    "professional" : "tech"
+}
+info["cgpa"] = 7.52
+print(info)
+print(type(info))
+print(info["professional"])
   
 
 
