@@ -111,13 +111,20 @@ print(info.items())
 print(info.get("cgpa"))'''
 
 #sets
-s = {1,2 ,3 ,3  , 4, 5 , 5,}
+'''s = {1,2 ,3 ,3  , 4, 5 , 5,}
 s.add(6)
 print(len(s))
 print(s)
 print(type(s))
 empty_set = set()
-print(empty_set)
+print(empty_set)'''
+
+#sets methods
+s = {1,2 ,3 ,3  , 4, 5 , 5,}
+#s.clear()
+print(s)
+s.pop()
+print(s)
 
 
 
