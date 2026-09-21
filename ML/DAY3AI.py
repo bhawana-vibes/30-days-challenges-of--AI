@@ -99,7 +99,7 @@ print(type(info))
 print(info["professional"])'''
 
 #dictionary methods
-info = {
+'''info = {
     "name" : "bhawana hirnwal",
     "city" : "bijnor",
     "cgpa" : 85,
@@ -108,7 +108,16 @@ info = {
 print(info.keys())
 print(info.values())
 print(info.items())
-print(info.get("cgpa"))
+print(info.get("cgpa"))'''
+
+#sets
+s = {1,2 ,3 ,3  , 4, 5 , 5,}
+s.add(6)
+print(len(s))
+print(s)
+print(type(s))
+empty_set = set()
+print(empty_set)
 
 
 
