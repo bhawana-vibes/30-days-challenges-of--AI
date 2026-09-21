@@ -87,7 +87,7 @@ print(num.index(4))
 print(num.count(6))'''
 
 #dictionary
-info = {
+'''info = {
     "name" : "bhawana hirnwal",
     "city" : "bijnor",
     "cgpa" : 85,
@@ -96,8 +96,19 @@ info = {
 info["cgpa"] = 7.52
 print(info)
 print(type(info))
-print(info["professional"])
-  
+print(info["professional"])'''
+
+#dictionary methods
+info = {
+    "name" : "bhawana hirnwal",
+    "city" : "bijnor",
+    "cgpa" : 85,
+    "professional" : "tech"
+}
+print(info.keys())
+print(info.values())
+print(info.items())
+print(info.get("cgpa"))
 
 
 
