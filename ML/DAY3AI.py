@@ -40,8 +40,11 @@ print(f"avg of {a} & {b} is {(a+b)/2}")'''
 
 #lists
 marks = [57,67,98,76,90]
-marks[2] = 88
+'''marks[2] = 88
 print(len(marks))
 print(marks)
 print(type(marks))
 print(marks[0:5])
+marks.append(99)'''
+marks.insert(3 , 70)
+print(marks)
