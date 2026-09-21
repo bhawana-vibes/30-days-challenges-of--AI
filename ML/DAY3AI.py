@@ -49,13 +49,13 @@ marks.append(99)
 marks.insert(3 , 70)
 marks.sort()
 marks.reverse()
-print(marks)'''
+print(marks)
 
 #using for loop with lists
 #marks = [57,67,98,76,90]
 #for val in marks:
    # print(val)
-
+#linear search
 marks = [57,67,98,76,90]
 x = 98
 idx = 0
@@ -63,4 +63,13 @@ for val in marks:
   if val == x:
     print(idx)
     break 
-  idx = idx +1
+  idx = idx +1'''
+
+#tuple
+digits = (1,2,3, 4,5,6)
+print(digits)
+print(type(digits))
+print(digits[3])
+#digits[2] =45 #not allow this line
+print(digits[0:2])
+
