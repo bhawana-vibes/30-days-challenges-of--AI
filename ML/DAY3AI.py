@@ -45,6 +45,8 @@ print(len(marks))
 print(marks)
 print(type(marks))
 print(marks[0:5])
-marks.append(99)'''
+marks.append(99)
 marks.insert(3 , 70)
+marks.sort()'''
+marks.reverse()
 print(marks)
