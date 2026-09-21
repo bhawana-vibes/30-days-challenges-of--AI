@@ -66,10 +66,24 @@ for val in marks:
   idx = idx +1'''
 
 #tuple
-digits = (1,2,3, 4,5,6)
+'''digits = (1,2,3, 4,5,6)
 print(digits)
 print(type(digits))
 print(digits[3])
 #digits[2] =45 #not allow this line
-print(digits[0:2])
+print(digits[0:2])'''
+
+digits = (1,2,3, 4,5,6)
+#for val in digits:
+   # print(val)
+
+sum = 0
+for val in digits:
+    sum += val
+print(sum)
+
+
+  
+
+
 
