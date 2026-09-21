@@ -73,14 +73,18 @@ print(digits[3])
 #digits[2] =45 #not allow this line
 print(digits[0:2])'''
 
-digits = (1,2,3, 4,5,6)
-#for val in digits:
-   # print(val)
+'''digits = (1,2,3,4,5,6)
+for val in digits:
+    print(val)
 
 sum = 0
 for val in digits:
     sum += val
-print(sum)
+print(sum)'''
+
+num = (2,4,6,8,6,9,4)
+print(num.index(4))
+print(num.count(6))
 
 
   
