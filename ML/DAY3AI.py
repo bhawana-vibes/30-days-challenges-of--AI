@@ -145,11 +145,13 @@ info = [
     #if(course == "english"):
        # print(name)
 
-dict = {}
+'''dict = {}
 for name , course in info:
     if(dict.get(name) == None):
         dict.update({name:set()})
         dict[name].add(course)
     else:
          dict[name].add(course)
-print(dict)
+print(dict)'''
+
+print("......lecture3 done......")
