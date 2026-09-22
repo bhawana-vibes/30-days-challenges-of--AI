@@ -141,6 +141,15 @@ info = [
  #   course_set.add(tup[1])
 #print(course_set)
 
+#for name , course in info:
+    #if(course == "english"):
+       # print(name)
+
+dict = {}
 for name , course in info:
-    if(course == "english"):
-        print(name)
+    if(dict.get(name) == None):
+        dict.update({name:set()})
+        dict[name].add(course)
+    else:
+         dict[name].add(course)
+print(dict)
