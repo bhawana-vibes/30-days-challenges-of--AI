@@ -136,7 +136,11 @@ info = [
     ("alice" , "english"),
     ("charlie" , "english")
 ]
-course_set = set()
-for tup in info:
-    course_set.add(tup[1])
-print(course_set)
+#course_set = set()
+#for tup in info:
+ #   course_set.add(tup[1])
+#print(course_set)
+
+for name , course in info:
+    if(course == "english"):
+        print(name)
