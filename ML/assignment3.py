@@ -18,3 +18,17 @@ list2 = [2,4,5]
 merge_list = list1+list2
 merge_list.sort()
 print(merge_list)
+
+#que4
+tup = (2,4,6,7,8,9,11,23,15,18)
+even_list = []
+odd_list = []
+for num in tup:
+    if num % 2 ==0:
+        even_list.append(num)
+    else:
+        odd_list.append(num)
+even_tuple = tuple(even_list)
+odd_tuple = tuple(odd_list)
+print(even_tuple)
+print(odd_tuple)
