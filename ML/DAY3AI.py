@@ -117,14 +117,26 @@ print(len(s))
 print(s)
 print(type(s))
 empty_set = set()
-print(empty_set)'''
+print(empty_set)
 
 #sets methods
 s = {1,2 ,3 ,3  , 4, 5 , 5,}
 #s.clear()
 print(s)
 s.pop()
-print(s)
+print(s)'''
 
-
-
+#student enrolments
+info = [
+    ("alice" , "math"),
+    ("bob" , "science"),
+    ("alice" , "science"),
+    ("charlie" , "math"),
+    ("bob" ,"math"),
+    ("alice" , "english"),
+    ("charlie" , "english")
+]
+course_set = set()
+for tup in info:
+    course_set.add(tup[1])
+print(course_set)
