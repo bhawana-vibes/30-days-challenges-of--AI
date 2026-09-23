@@ -41,6 +41,15 @@ for w in words:
 print(dict)'''
 
 #que7
-text = input("enter the text:")
+'''text = input("enter the text:")
 spaces = text.count(" ")
-print(spaces)
+print(spaces)'''
+
+#que8
+list1 = [1,2,3,4]
+list2 = [5,6,7,8]
+common = set(list1) & set(list2)
+if len(common) == 0:
+    print("no common number")
+else:
+    print("yes common number")
