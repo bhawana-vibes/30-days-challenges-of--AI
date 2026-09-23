@@ -67,7 +67,10 @@ print(list(duplicates))
 print(list(seen))'''
 
 #que10
-text = input("enter the text:")
+'''text = input("enter the text:")
 unique = set(text)
 print(unique)
-print(len(unique))
+print(len(unique))'''
+
+
+print(".....assignment3 done......")
