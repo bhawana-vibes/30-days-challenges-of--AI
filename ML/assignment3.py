@@ -46,10 +46,22 @@ spaces = text.count(" ")
 print(spaces)'''
 
 #que8
-list1 = [1,2,3,4]
+'''list1 = [1,2,3,4]
 list2 = [5,6,7,8]
 common = set(list1) & set(list2)
 if len(common) == 0:
     print("no common number")
 else:
-    print("yes common number")
+    print("yes common number" , common)'''
+
+#que9
+numbers = [1, 2, 3, 2, 4, 5, 1, 6, 2]
+seen = set()
+duplicates = set()
+for items in numbers:
+    if items in seen:
+        duplicates.add(items)
+    else:
+        seen.add(items)
+print(list(duplicates))
+print(list(seen))
