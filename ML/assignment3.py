@@ -55,7 +55,7 @@ else:
     print("yes common number" , common)'''
 
 #que9
-numbers = [1, 2, 3, 2, 4, 5, 1, 6, 2]
+'''numbers = [1, 2, 3, 2, 4, 5, 1, 6, 2]
 seen = set()
 duplicates = set()
 for items in numbers:
@@ -64,4 +64,10 @@ for items in numbers:
     else:
         seen.add(items)
 print(list(duplicates))
-print(list(seen))
+print(list(seen))'''
+
+#que10
+text = input("enter the text:")
+unique = set(text)
+print(unique)
+print(len(unique))
