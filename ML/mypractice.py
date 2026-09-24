@@ -8,7 +8,7 @@ while attempts<3:
         print("wrong pin .try again.")
         attempts += 1
 if attempts == 3:
-    print ("card blocked")
+    print ("card blocked")'''
 
 age = int(input("enter the age:"))
 day = input("enter the day:")
@@ -22,7 +22,7 @@ if day =="saturday":
    price = price-50
 print("final ticket price:rs.", price)
 
-total_amount = int(input("enter the amount:"))
+'''total_amount = int(input("enter the amount:"))
 is_member = input("yes/no:")
 delivery_charge = 0
 if total_amount>= 1000:
@@ -33,7 +33,7 @@ else:
     delivery = 50
 final = total_amount + delivery
 print(final)
-print(delivery)'''
+print(delivery)
 
 
 months = int(input("enter the months:"))
@@ -47,4 +47,4 @@ total_cost = months*1000
 discount_amount = (total_cost*discount)/100
 final_amount = total_cost - discount_amount
 print("total discount:" , discount , "%")
-print("final amount to pay rs.:" , final_amount)
+print("final amount to pay rs.:" , final_amount)'''
