@@ -18,11 +18,11 @@ class frutis:
     def __init__(self):
         print("this is calling contructor")
 fru1 = frutis()
-fru2 = frutis()'''
+fru2 = frutis()
 
 
 class frutis:
-    def __init__(self , name, price):
+    def __init__(self , name, price):parameterized 
         self.name = name
         self.price = price
     def get_price(self):
@@ -34,4 +34,17 @@ print(fru1.name)
 print(fru2.name)
 
 print(fru1.get_price())
-print( f"{fru1.name} is price of = {fru1.get_price()}")
+print( f"{fru1.name} is price of = {fru1.get_price()}")'''
+
+class student:
+    college_name = "abc college"
+
+    def __init__(self , name ,cgpa):
+        self.name = name
+        self.cgpa = cgpa
+
+
+stu1 = student("bhawana" , 7.5)
+stu2 = student("shilpi" , 8.5)
+print(stu1.name)
+print(stu2.college_name)
