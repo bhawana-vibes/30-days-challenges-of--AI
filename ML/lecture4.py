@@ -22,10 +22,15 @@ fru2 = frutis()'''
 
 
 class frutis:
-    def __init__(self , name):
+    def __init__(self , name, price):
         self.name = name
-fru1 = frutis("apple")
-fru2 = frutis("mango")
+        self.price = price
+    def get_price(self):
+        return self.price
+fru1 = frutis("apple" , 50)
+fru2 = frutis("mango" , 40)
 
 print(fru1.name)
 print(fru2.name)
+
+print(fru1.get_price())
