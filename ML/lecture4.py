@@ -34,3 +34,4 @@ print(fru1.name)
 print(fru2.name)
 
 print(fru1.get_price())
+print( f"{fru1.name} is price of = {fru1.get_price()}")
