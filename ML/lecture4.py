@@ -1,6 +1,6 @@
-print("lecture4 start")
+#print("lecture4 start")
 
-class student:
+'''class student:
     name = "bhawana"
     college = "abc"
     year = "4th"
@@ -11,4 +11,11 @@ print(type(l))
 print(type(stu1))
 print(type(stu2))
 #print(stu1.name , stu1.year , stu1.college)
-#print(stu2.name , stu2.year , stu2.college)
+#print(stu2.name , stu2.year , stu2.college)'''
+
+
+class frutis:
+    def __init__(self):
+        print("this is calling contructor")
+fru1 = frutis()
+fru2 = frutis()
