@@ -75,7 +75,4 @@ print(len(unique))'''
 
 print(".....assignment3 done......")
 
-len = float(input("enter the length:"))
-bre = float(input("enter the breadth:"))
-area = 2(len*bre)
-print(area)
+
