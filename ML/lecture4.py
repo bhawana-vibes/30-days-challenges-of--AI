@@ -34,7 +34,7 @@ print(fru1.name)
 print(fru2.name)
 
 print(fru1.get_price())
-print( f"{fru1.name} is price of = {fru1.get_price()}")'''
+print( f"{fru1.name} is price of = {fru1.get_price()}")
 
 class student:
     college_name = "abc college"
@@ -47,4 +47,18 @@ class student:
 stu1 = student("bhawana" , 7.5)
 stu2 = student("shilpi" , 8.5)
 print(stu1.name)
-print(stu2.college_name)
+print(stu2.college_name)'''
+
+
+class laptop:
+    storage_type = "ssd"
+
+    def __init__(self , RAM ,storage):
+        self.RAM = RAM
+        self.storage = storage
+
+    def get_info(self):
+        print(f"laptp has {self.RAM} RAM & {self.storage} {self.storage_type}")
+l1 = laptop("16gb","512gb")
+l2 = laptop("8gb","256gb")
+l1.get_info()
