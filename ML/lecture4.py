@@ -56,9 +56,14 @@ class laptop:
     def __init__(self , RAM ,storage):
         self.RAM = RAM
         self.storage = storage
+    @classmethod
+    def get_storage_type(cls):
+        print(f"storage type = {cls.storage_type}")
 
-    def get_info(self):
+    def get_info(self):#instance method
         print(f"laptp has {self.RAM} RAM & {self.storage} {self.storage_type}")
 l1 = laptop("16gb","512gb")
-l2 = laptop("8gb","256gb")
-l1.get_info()
+#l2 = laptop("8gb","256gb")
+#l1.get_info()
+
+print(laptop.get_storage_type())
