@@ -80,11 +80,17 @@ class Product:
         print(f"price of {self.name} is rs . {self.price}")
     @classmethod
     def get_count(cls):
-        print(f"total product is , {cls.count}")
+        print(f"total product is = {cls.count}")
 
-p1 = Product("laptop" , 50000)
-p2 = Product("phone" , 10000)
+    @staticmethod
+    def cal_discount(price , discount):
+        print(f"discounted price  = {price - (price*discount/100)}")
+
+
+p1 = Product("laptop" , 50_000)
+p2 = Product("phone" , 10_000)
 p3 = Product("pen" , 5)
 
 #p1.get_info()
-Product.get_count()
+#Product.get_count()
+p1.cal_discount(p1.price, 17)
