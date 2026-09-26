@@ -47,7 +47,7 @@ class student:
 stu1 = student("bhawana" , 7.5)
 stu2 = student("shilpi" , 8.5)
 print(stu1.name)
-print(stu2.college_name)'''
+print(stu2.college_name)
 
 
 class laptop:
@@ -66,4 +66,25 @@ l1 = laptop("16gb","512gb")
 #l2 = laptop("8gb","256gb")
 #l1.get_info()
 
-print(laptop.get_storage_type())
+print(laptop.get_storage_type())'''
+
+
+class Product:
+    count = 0
+    def __init__(self , name , price):
+        self.name = name
+        self.price = price
+        Product.count += 1
+
+    def get_info(self):
+        print(f"price of {self.name} is rs . {self.price}")
+    @classmethod
+    def get_count(cls):
+        print(f"total product is , {cls.count}")
+
+p1 = Product("laptop" , 50000)
+p2 = Product("phone" , 10000)
+p3 = Product("pen" , 5)
+
+#p1.get_info()
+Product.get_count()
