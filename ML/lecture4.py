@@ -127,7 +127,7 @@ class teacher(employee):
 
 t1 = teacher("math")
 t1.change_time("8pm")
-print(t1.subject , t1.start_time , t1.end_time)'''
+print(t1.subject , t1.start_time , t1.end_time)
 
 #multi level inheritance
 
@@ -148,4 +148,23 @@ acc1 = acccountant(30_000 , "ca")
 
 print(acc1.role)
 print(acc1.salary)
-print(acc1.start_time)
+print(acc1.start_time)'''
+
+#multiple
+
+class teacher:
+    def __init__(self , salary):
+        self.salary = salary
+
+class student:
+    def __init__(self ,gpa):
+        self.gpa = gpa
+
+class TA(teacher , student):
+    def __init__(self ,name, salary ,gpa,):
+        super().__init__(salary)
+        student.__init__(self , gpa)
+        self.name = name
+
+ta = TA("bhawana" , 10_00000 , 8.5 )
+print(ta.name , ta.gpa , ta.salary)
