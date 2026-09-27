@@ -167,7 +167,7 @@ class TA(teacher , student):
         self.name = name
 
 ta = TA("bhawana" , 10_00000 , 8.5 )
-print(ta.name , ta.gpa , ta.salary)'''
+print(ta.name , ta.gpa , ta.salary)
 
 #abstraction
 from abc import ABC , abstractmethod
@@ -192,3 +192,34 @@ Lion = lion()
 Lion.make_sound()
 Cow = cow()
 Cow.make_sound()
+
+#polymorphism
+
+class employee:
+    def get_designation(self):
+        print("designation = employee")
+
+class teacher(employee):
+    def get_designation(self):
+            print("designation = teacher")
+
+t1 = teacher()
+t1.get_designation()'''
+
+#duck typing
+class teacher():
+    def get_designation(self):
+            print("designation = teacher")
+
+class accuantant():
+    def get_designation(self):
+            print("designation = accuantant")
+
+t1 = teacher()
+t1.get_designation()
+
+
+acc1 = accuantant()
+acc1.get_designation()
+
+
