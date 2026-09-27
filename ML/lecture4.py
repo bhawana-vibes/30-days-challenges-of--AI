@@ -103,7 +103,12 @@ class bankaccount:
         #self._balance = balance #protected
         self.__balance = balance #private
 
-    def get_balance(self):
+    def get_balance(self):#getter
         return self.__balance
+
+    def set_balance(self , newbalance):#setter
+        self.__balance = newbalance
 acc1 = bankaccount("piyush" , 50_000)
+
+acc1.set_balance(60_000)
 print(acc1.name , acc1.get_balance())
