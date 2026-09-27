@@ -93,7 +93,7 @@ p3 = Product("pen" , 5)
 
 #p1.get_info()
 #Product.get_count()
-p1.cal_discount(p1.price, 17)'''
+p1.cal_discount(p1.price, 17)
 
 
 #encapsulation
@@ -111,4 +111,20 @@ class bankaccount:
 acc1 = bankaccount("piyush" , 50_000)
 
 acc1.set_balance(60_000)
-print(acc1.name , acc1.get_balance())
+print(acc1.name , acc1.get_balance())'''
+
+#inheritance
+class employee:
+    start_time = "9am"
+    end_time = "7pm"
+
+    def change_time(self , new_end_time):
+        self.end_time = new_end_time
+
+class teacher(employee):
+    def __init__(self , subject):
+        self.subject = subject
+
+t1 = teacher("math")
+t1.change_time("8pm")
+print(t1.subject , t1.start_time , t1.end_time)
