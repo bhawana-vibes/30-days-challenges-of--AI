@@ -66,7 +66,7 @@ l1 = laptop("16gb","512gb")
 #l2 = laptop("8gb","256gb")
 #l1.get_info()
 
-print(laptop.get_storage_type())'''
+print(laptop.get_storage_type())
 
 
 class Product:
@@ -93,4 +93,14 @@ p3 = Product("pen" , 5)
 
 #p1.get_info()
 #Product.get_count()
-p1.cal_discount(p1.price, 17)
+p1.cal_discount(p1.price, 17)'''
+
+
+#encapsulation
+class bankaccount:
+    def __init__(self , name , balance):
+        self.name = name #public
+        self._balance = balance #protected
+        self.__balance = balance #private
+acc1 = bankaccount("piyush" , 50_000)
+print(acc1.name , acc1.__balance)
