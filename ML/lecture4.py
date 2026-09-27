@@ -180,6 +180,15 @@ class lion(animal):
     def make_sound(self):
         print("roar")
 
+class cat(animal):
+    def make_sound(self):
+        print("meow")
+
+class cow(animal):
+    def make_sound(self):
+        print("moo")
+
 Lion = lion()
 Lion.make_sound()
-    
+Cow = cow()
+Cow.make_sound()
