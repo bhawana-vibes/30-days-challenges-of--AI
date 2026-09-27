@@ -100,7 +100,10 @@ p1.cal_discount(p1.price, 17)'''
 class bankaccount:
     def __init__(self , name , balance):
         self.name = name #public
-        self._balance = balance #protected
+        #self._balance = balance #protected
         self.__balance = balance #private
+
+    def get_balance(self):
+        return self.__balance
 acc1 = bankaccount("piyush" , 50_000)
-print(acc1.name , acc1.__balance)
+print(acc1.name , acc1.get_balance())
