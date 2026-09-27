@@ -148,7 +148,7 @@ acc1 = acccountant(30_000 , "ca")
 
 print(acc1.role)
 print(acc1.salary)
-print(acc1.start_time)'''
+print(acc1.start_time)
 
 #multiple
 
@@ -162,9 +162,24 @@ class student:
 
 class TA(teacher , student):
     def __init__(self ,name, salary ,gpa,):
-        super().__init__(salary)
+        super().__init__(salary)#call parent constructor
         student.__init__(self , gpa)
         self.name = name
 
 ta = TA("bhawana" , 10_00000 , 8.5 )
-print(ta.name , ta.gpa , ta.salary)
+print(ta.name , ta.gpa , ta.salary)'''
+
+#abstraction
+from abc import ABC , abstractmethod
+class animal(ABC):
+    @abstractmethod
+    def make_sound():
+        pass
+
+class lion(animal):
+    def make_sound(self):
+        print("roar")
+
+Lion = lion()
+Lion.make_sound()
+    
