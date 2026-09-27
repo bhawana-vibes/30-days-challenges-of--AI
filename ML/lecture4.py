@@ -111,7 +111,7 @@ class bankaccount:
 acc1 = bankaccount("piyush" , 50_000)
 
 acc1.set_balance(60_000)
-print(acc1.name , acc1.get_balance())'''
+print(acc1.name , acc1.get_balance())
 
 #inheritance
 class employee:
@@ -127,4 +127,25 @@ class teacher(employee):
 
 t1 = teacher("math")
 t1.change_time("8pm")
-print(t1.subject , t1.start_time , t1.end_time)
+print(t1.subject , t1.start_time , t1.end_time)'''
+
+#multi level inheritance
+
+class employee:
+    start_time = "10am"
+    end_time = "9pm"
+
+class adminstaff(employee):
+    def __init__(self ,  role):
+        self.role = role
+
+class acccountant(adminstaff):
+    def __init__(self , salary , role):
+        super().__init__(role)
+        self.salary = salary
+
+acc1 = acccountant(30_000 , "ca")
+
+print(acc1.role)
+print(acc1.salary)
+print(acc1.start_time)
