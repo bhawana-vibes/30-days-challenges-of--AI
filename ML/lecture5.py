@@ -23,9 +23,12 @@ f.close()
 
 f = open("ML/sample2.txt" , "x")
 f.write("python is low level langugae")
-f.close()'''
+f.close()
 
 with open("ML/sample.txt" ,"r") as f:
     data = f.read()
     print(f.read())
-    print(len(data))
+    print(len(data))'''
+
+import os
+os.remove("ML/sample2.txt")
