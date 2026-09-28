@@ -1,0 +1,3 @@
+this is a sample file 
+the python is a programming language
+in thi is file i/o topic
