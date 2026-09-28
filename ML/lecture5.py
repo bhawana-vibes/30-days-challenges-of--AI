@@ -5,9 +5,13 @@ print(data1)
 data = f.read()
 print(data)
 print(type(data))
-f.close()'''
+f.close()
 
 
 f = open("ML/sample.txt" , "w")
 f.write("bhawana hirnwal is a girl")
+f.close()'''
+
+f = open("ML/sample.txt")
+print(f.read())
 f.close()
