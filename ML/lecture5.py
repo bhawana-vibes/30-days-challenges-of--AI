@@ -14,9 +14,13 @@ f.close()
 
 f = open("ML/sample.txt")
 print(f.read())
-f.close()'''
+f.close()
 
 
 f = open("ML/sample.txt" , "a")
 f.write("\nshe is the want to successful a person ")
+f.close()'''
+
+f = open("ML/sample2.txt" , "x")
+f.write("python is low level langugae")
 f.close()
