@@ -10,8 +10,13 @@ f.close()
 
 f = open("ML/sample.txt" , "w")
 f.write("bhawana hirnwal is a girl")
-f.close()'''
+f.close()
 
 f = open("ML/sample.txt")
 print(f.read())
+f.close()'''
+
+
+f = open("ML/sample.txt" , "a")
+f.write("\nshe is the want to successful a person ")
 f.close()
