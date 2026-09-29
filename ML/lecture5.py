@@ -31,7 +31,7 @@ with open("ML/sample.txt" ,"r") as f:
     print(len(data))
 
 import os
-os.remove("ML/sample2.txt")'''
+os.remove("ML/sample2.txt")
 
 #word search
 
@@ -47,4 +47,15 @@ with open("ML/sample.txt" , "r") as f:
             print(f"{word} found at line {line}")
             break
         print(data)
-        line += 1
+        line += 1'''
+
+#execption handling
+try:
+    x = int(input("enter the x:"))
+    ans = 10/x
+
+except ZeroDivisionError:
+    print(f"divide by 0 not allowed")
+
+else:
+    print(f"ans = {ans}")
