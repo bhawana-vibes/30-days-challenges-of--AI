@@ -28,7 +28,23 @@ f.close()
 with open("ML/sample.txt" ,"r") as f:
     data = f.read()
     print(f.read())
-    print(len(data))'''
+    print(len(data))
 
 import os
-os.remove("ML/sample2.txt")
+os.remove("ML/sample2.txt")'''
+
+#word search
+
+data = True
+line = 1
+word = "want"
+
+with open("ML/sample.txt" , "r") as f:
+    while data:
+        data = f.readline()
+
+        if (word in data):
+            print(f"word found at line {line}")
+            break
+        print(data)
+        line += 1
