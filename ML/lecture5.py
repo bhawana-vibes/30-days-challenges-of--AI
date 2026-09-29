@@ -78,3 +78,5 @@ print(sq)'''
 nums = [-3 ,-5, -6,-3,7,4,6,7,9,2,-2,-7,-8]
 nums = [0 if val>0 else val for val in nums]
 print(nums)
+
+print(".....lecture5 done......")
