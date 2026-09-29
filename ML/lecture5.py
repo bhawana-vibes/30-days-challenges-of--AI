@@ -64,7 +64,7 @@ else:
     print(f"ans = {ans}")
 
 finally:
-    print("end of the program")'''
+    print("end of the program")
 
 #list comprehensions
 squares = []
@@ -73,4 +73,8 @@ for i in range(6):
 print(squares)
 
 sq = [i*i for i in range(6) if i%2!=0]
-print(sq)
+print(sq)'''
+
+nums = [-3 ,-5, -6,-3,7,4,6,7,9,2,-2,-7,-8]
+nums = [0 if val>0 else val for val in nums]
+print(nums)
