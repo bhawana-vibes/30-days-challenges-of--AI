@@ -44,7 +44,7 @@ with open("ML/sample.txt" , "r") as f:
         data = f.readline()
 
         if (word in data):
-            print(f"word found at line {line}")
+            print(f"{word} found at line {line}")
             break
         print(data)
         line += 1
