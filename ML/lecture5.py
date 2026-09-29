@@ -47,7 +47,7 @@ with open("ML/sample.txt" , "r") as f:
             print(f"{word} found at line {line}")
             break
         print(data)
-        line += 1'''
+        line += 1
 
 #execption handling
 try:
@@ -64,4 +64,13 @@ else:
     print(f"ans = {ans}")
 
 finally:
-    print("end of the program")
+    print("end of the program")'''
+
+#list comprehensions
+squares = []
+for i in range(6):
+    squares.append(i*i)
+print(squares)
+
+sq = [i*i for i in range(6) if i%2!=0]
+print(sq)
