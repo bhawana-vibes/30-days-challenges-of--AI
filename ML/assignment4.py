@@ -19,7 +19,7 @@ print(".......asignment start.....")
 acc = bankaccount("101", "Piyush", 500)
 acc.deposit(200)
 acc.withdraw(100)
-print("Current Balance:", acc.check_balance())'''
+print("Current Balance:", acc.check_balance())
 
 #que2
 class book:
@@ -44,4 +44,36 @@ b.add_review("must read")
 
 
 print("total reviews:" , b.count_reviews())
-b.display_all_reviews()
+b.display_all_reviews()'''
+
+#que4
+class shape:
+    def area(self):
+        return 0
+class circle(shape):
+    def __init__(self, radius):
+        self.radius = radius
+    def area(self):
+        return 3.14*(self.radius**2)
+class rectangle(shape):
+    def __init__(self, length, width):
+        self.length = length
+        self.width = width
+    def area(self):
+        return self.length*self.width
+class triangle(shape):
+    def __init__(self, base, height):
+        self.base = base
+        self.height = height
+    def area(self):
+        return 0.5*self.base * self.height
+
+c = circle(4)
+r = rectangle(3,5)
+t = triangle(9,7)
+print(f"circle : {c.area()}")
+print(f"rectangle : {r.area()}")
+print(f"triangle : {t.area()}")
+
+
+
