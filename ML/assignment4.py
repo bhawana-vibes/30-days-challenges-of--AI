@@ -44,7 +44,7 @@ b.add_review("must read")
 
 
 print("total reviews:" , b.count_reviews())
-b.display_all_reviews()'''
+b.display_all_reviews()
 
 #que4
 class shape:
@@ -73,7 +73,51 @@ r = rectangle(3,5)
 t = triangle(9,7)
 print(f"circle : {c.area()}")
 print(f"rectangle : {r.area()}")
-print(f"triangle : {t.area()}")
+print(f"triangle : {t.area()}")'''
+
+#que6
+from abc import ABC, abstractmethod
+
+
+class Employee(ABC):
+
+  def __init__(self, name):
+    self.name = name
+
+  @abstractmethod
+  def cal_salary(self):
+    pass
+
+
+class Intern(Employee):
+
+  def __init__(self, name, hours_worked, hourly_rate):
+    super().__init__(name)
+    self.hours_worked = hours_worked
+    self.hourly_rate = hourly_rate
+
+  def cal_salary(self):
+    return self.hours_worked * self.hourly_rate
+
+
+class FullTime(Employee):
+
+  def __init__(self, name, monthly_salary): 
+    super().__init__(name)  
+    self.monthly_salary = monthly_salary  
+
+  def cal_salary(self):
+    return self.monthly_salary
+
+
+ft = FullTime("Piyush", 50000)
+it = Intern("Aman", 100, 50)
+
+print(f"{ft.name} salary: Rs {ft.cal_salary()}")
+print(f"{it.name} salary: Rs {it.cal_salary()}")
+
+
+
 
 
 
