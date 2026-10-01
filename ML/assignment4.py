@@ -114,7 +114,7 @@ ft = FullTime("Piyush", 50000)
 it = Intern("Aman", 100, 50)
 
 print(f"{ft.name} salary: Rs {ft.cal_salary()}")
-print(f"{it.name} salary: Rs {it.cal_salary()}")'''
+print(f"{it.name} salary: Rs {it.cal_salary()}")
 
 #que7
 class person:
@@ -133,7 +133,28 @@ p3 = person("shilpi" , 22 ,"delhi")
 
 p1.display_info()
 p2.display_info()
-p3.display_info()
+p3.display_info()'''
+
+#que8
+class player:
+    player_count = 0
+    def __init__(self, name , level):
+        self.name = name
+        self.level = level
+        player.player_count += 1
+
+    def display(self):
+        print(f"player: {self.name} , level:{self.level}")
+p1 = player("alice" , 1)
+p2 = player("bob" , 5)
+p3 = player("charlie" , 11)
+
+p1.display()
+p2.display()
+p3.display()
+
+print(f"total players: {player.player_count}")
+
 
 
 
