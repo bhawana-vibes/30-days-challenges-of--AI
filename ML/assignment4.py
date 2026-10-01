@@ -73,7 +73,7 @@ r = rectangle(3,5)
 t = triangle(9,7)
 print(f"circle : {c.area()}")
 print(f"rectangle : {r.area()}")
-print(f"triangle : {t.area()}")'''
+print(f"triangle : {t.area()}")
 
 #que6
 from abc import ABC, abstractmethod
@@ -114,7 +114,26 @@ ft = FullTime("Piyush", 50000)
 it = Intern("Aman", 100, 50)
 
 print(f"{ft.name} salary: Rs {ft.cal_salary()}")
-print(f"{it.name} salary: Rs {it.cal_salary()}")
+print(f"{it.name} salary: Rs {it.cal_salary()}")'''
+
+#que7
+class person:
+    def __init__(self , name , age=None , address=None):
+        self.name = name
+        self.age = age 
+        self.address = address
+
+    def display_info(self):
+        print(f"name:{self.name} , age:{self.age} , address:{self.address}")
+
+p1 = person("bhawana")
+p2 = person("priya" , 21)
+p3 = person("shilpi" , 22 ,"delhi")
+
+
+p1.display_info()
+p2.display_info()
+p3.display_info()
 
 
 
