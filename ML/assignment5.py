@@ -25,7 +25,7 @@ with open(r"ML\log.txt" , "r") as f:
 list = [5,10,15,20,25]
 new_list = [x for x in list if x>15]
 print("original list" , list)
-print("new_list" , new_list)'''
+print("new_list" , new_list)
 
 #que4
 import json
@@ -49,4 +49,14 @@ cities_data[city] = population
 
 with open(r"ML\cities.json" , "w") as f:
     json.dump(cities_data , f , indent=4)
-print("city added successfully")
+print("city added successfully")'''
+
+#que5
+
+try:
+    with open("data.txt" , "r") as f:
+        content = f.read()
+        print(content)
+
+except FileNotFoundError:
+    print("file not found")
