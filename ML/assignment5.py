@@ -10,7 +10,7 @@ print("file read names")
 
 with open(r"ML\names.txt" , "r") as f:
     content = f.read()
-    print(content)'''
+    print(content)
 
 #que2
 with open(r"ML\log.txt" , "a") as f:
@@ -19,4 +19,10 @@ print("all logs in log.txt")
 
 with open(r"ML\log.txt" , "r") as f:
     all_logs = f.read()
-    print(all_logs)
+    print(all_logs)'''
+
+#que3
+list = [5,10,15,20,25]
+new_list = [x for x in list if x>15]
+print("original list" , list)
+print("new_list" , new_list)
