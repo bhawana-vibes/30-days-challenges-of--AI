@@ -177,6 +177,7 @@ baloo.eat_plants()
 baloo.hunt_and_meat()
 baloo.diet_type()
 
+print(".....assignment4......")
 
 
 
