@@ -133,7 +133,7 @@ p3 = person("shilpi" , 22 ,"delhi")
 
 p1.display_info()
 p2.display_info()
-p3.display_info()'''
+p3.display_info()
 
 #que8
 class player:
@@ -153,7 +153,29 @@ p1.display()
 p2.display()
 p3.display()
 
-print(f"total players: {player.player_count}")
+print(f"total players: {player.player_count}")'''
+
+#que9
+class herbivors:
+    def eat_plants(self):
+        print("eats berries, grass & plants")
+class carnivore:
+    def hunt_and_meat(self):
+        print("hunts fish & eats meat")
+class omnivore:
+    def diet_type(self):
+        print("can digest both plant & animal matter")
+class bear(herbivors , carnivore , omnivore):
+    def __init__(self , name):
+        self.name = name
+
+    def show_behavior(self):
+        print(f"{self.name} the bear's habits")
+baloo = bear("baloo")
+baloo.show_behavior()
+baloo.eat_plants()
+baloo.hunt_and_meat()
+baloo.diet_type()
 
 
 
