@@ -34,19 +34,19 @@ cities_data = {
     "mumbai" : 50000,
     "bengaluru" : 1300000
 }
-with open("ML\cities.json" , "w") as f:
+with open(r"ML\cities.json" , "w") as f:
     json.dump(cities_data , f , indent=4)
 
-with open("ML\cities.json" , "r") as f:
+with open(r"ML\cities.json" , "r") as f:
     loaded_data = json.load(f)
-for city_data , population in cities.items():
-    print(city_data , ":" , population)
+for city,population in loaded_data.items():
+    print(city, ":" , population)
 
 city = input("enter city name:")
 population = int(input("enter population:"))
 
 cities_data[city] = population
 
-with open("cities.json" , "w") as f:
+with open(r"ML\cities.json" , "w") as f:
     json.dump(cities_data , f , indent=4)
 print("city added successfully")
