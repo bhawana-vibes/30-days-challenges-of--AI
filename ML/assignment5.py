@@ -19,10 +19,34 @@ print("all logs in log.txt")
 
 with open(r"ML\log.txt" , "r") as f:
     all_logs = f.read()
-    print(all_logs)'''
+    print(all_logs)
 
 #que3
 list = [5,10,15,20,25]
 new_list = [x for x in list if x>15]
 print("original list" , list)
-print("new_list" , new_list)
+print("new_list" , new_list)'''
+
+#que4
+import json
+cities_data = {
+    "delhi" : 30000,
+    "mumbai" : 50000,
+    "bengaluru" : 1300000
+}
+with open("ML\cities.json" , "w") as f:
+    json.dump(cities_data , f , indent=4)
+
+with open("ML\cities.json" , "r") as f:
+    loaded_data = json.load(f)
+for city_data , population in cities.items():
+    print(city_data , ":" , population)
+
+city = input("enter city name:")
+population = int(input("enter population:"))
+
+cities_data[city] = population
+
+with open("cities.json" , "w") as f:
+    json.dump(cities_data , f , indent=4)
+print("city added successfully")
